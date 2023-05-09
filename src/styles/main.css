@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 * {
   padding: 0;
@@ -26,13 +27,24 @@ img {
 }
 
 .logo {
+  font-family: "Pacifico", "Raleway", sans-serif;
+  text-transform: capitalize;
+  align-items: center;
+  font-size: 28px;
 	width: 100%;
 	padding: 0;
 	margin: 0;
 	text-align: left;
 	box-sizing: border-box;
 	display: inline-block;
-	line-height: 24px;
+	line-height: 10px;
+}
+
+.logo__mobile {
+  font-family: "Pacifico", "Raleway", sans-serif;
+  font-size: 25px;
+  padding: 0;
+  margin: 20px;
 }
 
 /*
@@ -41,13 +53,15 @@ img {
 
 .menu__mobile {
   background-color: DarkSalmon;
-	color: white;
+	color: Bisque;
+  font-family: "Pacifico", "Raleway", sans-serif;
+  text-transform: capitalize;
 	width: 100%;
 	display: flex;
   font-weight: 600;
 	font-size: 20px;
 	padding: 10px;
-	text-align: left;
+	text-align: center;
 	justify-content: space-between
 }
 
@@ -98,7 +112,8 @@ img {
   width: 100%;
   display: flex;
   font-weight: 600;
-	font-size: 16px;
+	font-size: 13px;
+  align-items: center;
   text-transform: uppercase
 }
 
@@ -140,6 +155,9 @@ img {
   min-height: 300px;
   width: 100%;
   text-align: center;
+  font-family: "Pacifico", sans-serif;
+  font-style: initial;
+  text-transform: capitalize;
   background-image: url("../public/images/heros/hero-image_4.jpg");
   background-position: center;
 }
@@ -152,14 +170,14 @@ img {
 .hero__title {
   color: #fff;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 35px;
 }
 
 .hero__tagline {
   color: #fff;
   margin-top: 16px;
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 25px;
+  font-weight: 100;
 }
 
 /*
@@ -244,21 +262,22 @@ main {
 }
 
 .post-item__rating {
-  font-size: 25px;
+  font-size: 15px;
   text-transform: uppercase;
-  color: #999;
+  color: slategrey;
   font-weight: 500;
 }
 
 .post-item__rating__value {
   color: LightSalmon;
   text-decoration: none;
-  font-size: 40px;
+  font-size: 25px;
 }
 
 .post-item__title {
-  font-weight: 500;
-  font-size: 30px;
+  font-size: 35px;
+  font-weight: bold;
+  color: slategrey;
   margin-top: 16px;
   transition: 0.3s opacity;
 }
@@ -270,13 +289,13 @@ main {
 .post-item__title a {
   text-decoration: none;
   color: inherit;
-  padding: 2.5em;
 }
 
 .post-item__description {
   margin-top: 16px;
   font-size: 14px;
   line-height: 1.5em;
+  color: black;
 }
 
 /*
@@ -287,7 +306,7 @@ footer {
   background-color: slategrey;
   color : white;
   font-size: 15px;
-  padding: 0.5em;
+  padding: 1.5em;
   width: 100%;
   text-align: center;
 }
