@@ -262,7 +262,7 @@ main {
 }
 
 .post-item__rating {
-  font-size: 15px;
+  font-size: 20px;
   text-transform: uppercase;
   color: slategrey;
   font-weight: 500;
@@ -271,7 +271,7 @@ main {
 .post-item__rating__value {
   color: LightSalmon;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 40px;
 }
 
 .post-item__title {
@@ -289,6 +289,9 @@ main {
 .post-item__title a {
   text-decoration: none;
   color: inherit;
+  box-sizing: border-box;
+  font-size: 40px;
+  min-height: 44px;
 }
 
 .post-item__description {
