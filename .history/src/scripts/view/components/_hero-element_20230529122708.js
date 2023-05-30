@@ -20,9 +20,10 @@ class HeroElement extends HTMLElement {
           alt="Gambar Hero"
         />
       </picture>
-      <h1 class="hero__heading">Restaurant</h1>
-      <p class="hero__subheading">Restaurant Katalog</p>
-      <p class="hero__tagline">Penjelajah Restaurant Populer</p>
+      <h1 class="hero__heading">Restolog</h1>
+      <p class="hero__subheading">Restaurant Catalog</p>
+      <p class="hero__tagline">Jelajahi berbagai cita rasa Restaurant dalam
+        satu katalog komprehensif</p>
     `;
   }
 

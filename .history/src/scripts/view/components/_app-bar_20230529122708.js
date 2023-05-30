@@ -19,7 +19,7 @@ class AppBar extends HTMLElement {
         <div>
           <a href="/" class="app-bar__logo">
             <img src="${logo}" alt="Logo" width="27px" height="27px">
-            <span>Resturant</span>
+            <span>Restolog</span>
           </a>
         </div>
         <button id="menu-btn" aria-label="Tampilkan Menu">☰</button>
