@@ -16,7 +16,7 @@ const createRestaurantItemTemplate = (restaurant) => `
 `;
 
 const createRestaurantDetailTemplate = (restaurant) => `
-  
+<div class="container">  
 <div class="detail">
   
     <h1 class="title" id="resto-title">
@@ -62,6 +62,7 @@ const createRestaurantDetailTemplate = (restaurant) => `
     </div>
 
   </div>
+  
 `;
 
 const createRestaurantReviewTemplate = (reviews) => `
@@ -70,6 +71,7 @@ const createRestaurantReviewTemplate = (reviews) => `
     <span class="name">${reviews.name}</span> &bull; <span class="date">${reviews.date}</span>
     </p>
     <p>${reviews.review}</p>
+  </div>
   </div>
 `;
 

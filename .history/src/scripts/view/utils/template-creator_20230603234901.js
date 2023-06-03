@@ -22,9 +22,8 @@ const createRestaurantDetailTemplate = (restaurant) => `
     <h1 class="title" id="resto-title">
       ${restaurant.name}
     </h1>
-    <img class="lazyload" data-src="${
-      CONFIG.SMALL_BASE_IMAGE_URL + restaurant.pictureId
-    }" alt="${restaurant.name}" />
+    <img class="lazyload" data-src="${restaurant.pictureId ? CONFIG.SMALL_BASE_IMAGE_URL + restaurant.pictureId : 'images/heros/hero-image_2.jpg'}" alt="${restaurant.name} ">
+    <div class="post-city">${restaurant.city}</div>
 
     <div class="info">
       <h2>Information</h2>
