@@ -3,7 +3,7 @@ import CONFIG from "../../global/config";
 const createRestaurantItemTemplate = (resto) => `
 <div class="post-item">
     <img class="lazyload" data-src="${resto.pictureId ? CONFIG.SMALL_BASE_IMAGE_URL + resto.pictureId : 'images/heros/hero-image_2.jpg'}" alt="${resto.name} ">
-    <div class="post-city">${resto.city}</div>
+    <div class="post-city">${data["city"]}</div>
     <div class="post-item__content">
     <p class="post-item__rating">
         Rating : 
