@@ -1,4 +1,4 @@
-import { createRestaurantItemTemplate } from '../../utils/template-creator';
+import { createRestoItemTemplate } from '../../utils/template-creator';
 
 class FavoriteRestaurantSearchView {
   getTemplate() {

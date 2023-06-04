@@ -357,12 +357,12 @@ footer {
 /* Detail */
 .title-content { 
   text-align: center;
-    color: orange;
-    display: block;
-    padding: 21px;
+  color: orange;
 }
+
 .detail {
   flex: 1;
+  width: 100%;
   padding: 20px;
   background-color: #f8f8f8;
   border-radius: 5px;
@@ -401,20 +401,11 @@ footer {
   margin-bottom: 5px;
 }
 
-.info p {
-  margin: 0;
-}
-
+.info p,
 .overview p {
   margin: 0;
 }
 
-/* Review */
-h2{
-  color: orange;
-  text-align: center;
-  padding-bottom: 10px;
-}
 .review {
   flex: 1;
   border: 1px solid #ccc;

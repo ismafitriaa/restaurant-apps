@@ -463,7 +463,15 @@ h2{
 
 /* favorite */
 
-
+body {
+  display: flex;
+  justify-content: center; /* Align horizontally */
+  align-items: center;     /* Align vertically */
+  min-height: 100vh;       /* Make sure the body takes up the full viewport height */
+  margin: 0;               /* Remove default margin */
+  background-color: #f8f8f8; /* Light grey background for a bit of contrast */
+  font-family: Arial, sans-serif; /* A basic font stack */
+}
 
 #restaurant-search-container {
   text-align: center; /* Center the text within the container */
