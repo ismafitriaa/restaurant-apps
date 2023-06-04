@@ -1,0 +1,42 @@
+{
+    "id": "restaurant-apps-pwa-1",
+    "start_url": "./index.html",
+    "name": "Restaurant Apps Lite",
+    "short_name": "Resto Lite",
+    "description": "Free Catalogue Menu Resto for you",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "theme_color": "#D84315",
+    "icons": [
+      {
+        "src": "../images/icons/restaurant-32.png",
+        "sizes": "32x32",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "../images/icons/restaurant-64.png",
+        "sizes": "64x64",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "../images/icons/restaurant-128.png",
+        "sizes": "128x128",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "../images/icons/restaurant-256.png",
+        "sizes": "256x256",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "../images/icons/restaurant-512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any"
+      }
+    ]
+  }
