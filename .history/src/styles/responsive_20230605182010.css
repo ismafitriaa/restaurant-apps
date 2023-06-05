@@ -180,9 +180,3 @@
         max-width: 1200px;
     }
 }
-
-@media screen and (max-width: 1045px) {
-    .detail {
-        width: 1200px;
-    }
-}

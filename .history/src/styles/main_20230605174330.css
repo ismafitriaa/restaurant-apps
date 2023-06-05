@@ -245,14 +245,13 @@ main {
 
 .post-city {
 	position: absolute;
-  top: 22px;
-  left: 25px;
+	top: 8px;
+	left: 16px;
 	border-radius: 5px;
-  height: 50px;
 	background-color: LightSalmon;
 	padding: 5px 10px 5px;
 	color: white;
-	font-weight: 600;
+	font-weight: 500
 }
 
 .post-item__content {
@@ -279,9 +278,9 @@ main {
   text-transform: uppercase;
   color: slategrey;
   font-weight: 600;
+  min-width: 70px;
+	min-height: 90px;
 }
-
-
 
 .post-item__rating__value {
   color: LightSalmon;
@@ -391,7 +390,7 @@ footer {
 
 .info h2,
 .overview h2 {
-  font-size: 35px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
@@ -484,7 +483,6 @@ h2{
 .search-box {
   width: 100%; 
   padding: 10px; 
-  height: 50px;
   margin-bottom: 20px; 
   border-radius: 5px; 
   border: 1px solid #ddd; 
@@ -499,11 +497,3 @@ h2{
 .resto-list {
   width: 100%; 
 }
-
-
-/* revisi  */
-p {
-  font-size: large;
-}
-
-

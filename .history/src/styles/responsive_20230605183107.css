@@ -181,7 +181,7 @@
     }
 }
 
-@media screen and (max-width: 1045px) {
+@media screen and (max-width: 1045) {
     .detail {
         width: 1200px;
     }

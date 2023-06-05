@@ -4,7 +4,7 @@
 }
 
 
-@media screen and (max-width: 755px) {
+@media screen and (min-width: 460px) {
 
 	.post-item{
 		margin-left: 70px;
@@ -15,54 +15,9 @@
 	}
 
 	.nav a {
+		padding: 100px;
 		display: contents;
 	}
-
-	.nav { 
-		height: 60px;
-	}
-
-}
-
-@media screen and (max-width: 840px) {
-
-	.post-item{
-		margin-left: 30px;
-	}
-
-	.title-content {
-		padding: 0px;
-	}
-
-	.nav a {
-		display: contents;
-	}
-
-	.nav { 
-		height: 60px;
-	}
-
-
-}
-
-@media screen and (max-width: 1125px) {
-
-	.row{
-		justify-content: center;
-	}
-
-	.title-content {
-		padding: 0px;
-	}
-
-	.nav a {
-		display: contents;
-	}
-
-	.nav { 
-		height: 60px;
-	}
-
 
 }
 
@@ -178,11 +133,5 @@
 @media screen and (min-width: 1200px) {
     main {
         max-width: 1200px;
-    }
-}
-
-@media screen and (max-width: 1045px) {
-    .detail {
-        width: 1200px;
     }
 }

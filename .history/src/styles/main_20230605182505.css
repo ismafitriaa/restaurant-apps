@@ -245,14 +245,14 @@ main {
 
 .post-city {
 	position: absolute;
-  top: 22px;
-  left: 25px;
+	top: 8px;
+  font-size: large;
+	left: 16px;
 	border-radius: 5px;
-  height: 50px;
 	background-color: LightSalmon;
 	padding: 5px 10px 5px;
 	color: white;
-	font-weight: 600;
+	font-weight: 500
 }
 
 .post-item__content {

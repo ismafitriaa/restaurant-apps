@@ -245,14 +245,13 @@ main {
 
 .post-city {
 	position: absolute;
-  top: 22px;
-  left: 25px;
+	top: 8px;
+	left: 16px;
 	border-radius: 5px;
-  height: 50px;
 	background-color: LightSalmon;
 	padding: 5px 10px 5px;
 	color: white;
-	font-weight: 600;
+	font-weight: 500
 }
 
 .post-item__content {
@@ -279,17 +278,19 @@ main {
   text-transform: uppercase;
   color: slategrey;
   font-weight: 600;
+  min-width: 70px;
+	min-height: 90px;
 }
-
-
 
 .post-item__rating__value {
   color: LightSalmon;
   text-decoration: none;
   font-size: 40px;
   font-weight: 600;
+  width: 44px;
+  height: 44px;
   min-width: 20px;
-  font-family: 'none';
+  font-family: 'Courier New', Courier, monospace;
 }
 
 
@@ -391,7 +392,7 @@ footer {
 
 .info h2,
 .overview h2 {
-  font-size: 35px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
@@ -482,28 +483,19 @@ h2{
 }
 
 .search-box {
-  width: 100%; 
-  padding: 10px; 
-  height: 50px;
-  margin-bottom: 20px; 
-  border-radius: 5px; 
-  border: 1px solid #ddd; 
+  width: 100%; /* Make the search box take up the full width of the container */
+  padding: 10px; /* Add some padding for space */
+  margin-bottom: 20px; /* Add some margin for space */
+  border-radius: 5px; /* Round the corners a bit for aesthetics */
+  border: 1px solid #ddd; /* A subtle border */
 }
 
 .row {
-  display: flex; 
-  justify-content: space-between; 
-  flex-wrap: wrap; 
+  display: flex; /* Use flexbox for the row */
+  justify-content: space-between; /* Add space between the items in the row */
+  flex-wrap: wrap; /* Allow the items to wrap to a new line */
 }
 
 .resto-list {
-  width: 100%; 
+  width: 100%; /* Make the restaurant list take up the full width of the row */
 }
-
-
-/* revisi  */
-p {
-  font-size: large;
-}
-
-

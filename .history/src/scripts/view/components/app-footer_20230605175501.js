@@ -5,7 +5,7 @@ class AppFooter extends HTMLElement {
 
   render() {
     this.innerHTML = `
-      <p> Copyright &copy; 2023 - Slice of Spice build with ISMA  </p>
+      <p>Copyright &copy; 2023 - Slice of Spice build with ISMA  </p>
       `;
   }
 }

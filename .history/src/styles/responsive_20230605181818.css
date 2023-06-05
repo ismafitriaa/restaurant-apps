@@ -47,8 +47,8 @@
 
 @media screen and (max-width: 1125px) {
 
-	.row{
-		justify-content: center;
+	.post-item{
+		padding: 10px;
 	}
 
 	.title-content {
@@ -178,11 +178,5 @@
 @media screen and (min-width: 1200px) {
     main {
         max-width: 1200px;
-    }
-}
-
-@media screen and (max-width: 1045px) {
-    .detail {
-        width: 1200px;
     }
 }

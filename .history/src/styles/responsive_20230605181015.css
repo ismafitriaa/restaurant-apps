@@ -24,10 +24,10 @@
 
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 755px) {
 
 	.post-item{
-		margin-left: 30px;
+		margin-left: 70px;
 	}
 
 	.title-content {
@@ -41,28 +41,6 @@
 	.nav { 
 		height: 60px;
 	}
-
-
-}
-
-@media screen and (max-width: 1125px) {
-
-	.row{
-		justify-content: center;
-	}
-
-	.title-content {
-		padding: 0px;
-	}
-
-	.nav a {
-		display: contents;
-	}
-
-	.nav { 
-		height: 60px;
-	}
-
 
 }
 
@@ -178,11 +156,5 @@
 @media screen and (min-width: 1200px) {
     main {
         max-width: 1200px;
-    }
-}
-
-@media screen and (max-width: 1045px) {
-    .detail {
-        width: 1200px;
     }
 }

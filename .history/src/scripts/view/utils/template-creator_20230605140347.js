@@ -27,7 +27,7 @@ const createRestaurantDetailTemplate = (restaurant) => `
 }" alt="${restaurant.name}" />
 
     <div class="info">
-      <h2 class="informasi">Information</h2>
+      <h2>Information</h2>
       <ul>
         <li>
           <h3>Kota</h3>
