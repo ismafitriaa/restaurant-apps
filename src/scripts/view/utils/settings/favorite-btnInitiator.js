@@ -1,4 +1,4 @@
-import { createFavoriteButtonTemplate, createFavoritedButtonTemplate } from '../../utils/template-creator';
+import { createFavoriteButtonTemplate, createFavoritedButtonTemplate } from '../template-creator';
 
 const FavoriteButtonInitiator = {
   async init({ favoriteButtonContainer, favoriteRestaurants, restaurant }) {

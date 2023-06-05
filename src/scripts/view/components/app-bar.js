@@ -1,10 +1,10 @@
 class AppBar extends HTMLElement {
-    connectedCallback() {
-      this.render();
-    }
-  
-    render() {
-      this.innerHTML = `
+  connectedCallback() {
+    this.render();
+  }
+
+  render() {
+    this.innerHTML = `
     
       <!--  Navbar Mobile  -->
       <div class="menu__mobile">
@@ -35,8 +35,7 @@ class AppBar extends HTMLElement {
           </div>
       </div>
       `;
-    }
   }
-  
-  customElements.define('app-bar', AppBar);
-  
+}
+
+customElements.define('app-bar', AppBar);

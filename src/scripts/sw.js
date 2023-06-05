@@ -34,29 +34,25 @@ self.addEventListener('activate', (event) => {
 });
 
 // Precache other assets
-precacheAndRoute(self.__WB_MANIFEST, {ignoreURLParametersMatching: [/.*/]});
+precacheAndRoute(self.__WB_MANIFEST, { ignoreURLParametersMatching: [/.*/] });
 
 registerRoute(
-    ({url, request}) => {
-      return url.origin === API_BASE_URL && request.destination !== 'image';
-    },
-    new NetworkFirst({cacheName: API_CACHE_NAME}),
+  ({ url, request }) => url.origin === API_BASE_URL && request.destination !== 'image',
+  new NetworkFirst({ cacheName: API_CACHE_NAME }),
 );
 
 registerRoute(
-    ({url, request}) => {
-      return url.origin === API_BASE_URL && request.destination === 'image';
-    },
-    new CacheFirst({
-      cacheName: IMAGE_CACHE_NAME,
-      plugins: [
-        new CacheableResponsePlugin({statuses: [0, 200]}),
-        new ExpirationPlugin({
-          maxEntries: 40,
-          maxAgeSeconds: 30 * 24 * 60 * 60,
-        }),
-      ],
-    }),
+  ({ url, request }) => url.origin === API_BASE_URL && request.destination === 'image',
+  new CacheFirst({
+    cacheName: IMAGE_CACHE_NAME,
+    plugins: [
+      new CacheableResponsePlugin({ statuses: [0, 200] }),
+      new ExpirationPlugin({
+        maxEntries: 40,
+        maxAgeSeconds: 30 * 24 * 60 * 60,
+      }),
+    ],
+  }),
 );
 
 // Handle fetch events

@@ -1,4 +1,4 @@
-import CONFIG from "../../global/config";
+import CONFIG from '../../global/config';
 
 const createRestaurantItemTemplate = (restaurant) => `
 <div class="post-item">
@@ -23,8 +23,8 @@ const createRestaurantDetailTemplate = (restaurant) => `
       ${restaurant.name}
     </h1>
     <img class="lazyload" data-src="${
-      CONFIG.SMALL_BASE_IMAGE_URL + restaurant.pictureId
-    }" alt="${restaurant.name}" />
+  CONFIG.SMALL_BASE_IMAGE_URL + restaurant.pictureId
+}" alt="${restaurant.name}" />
 
     <div class="info">
       <h2>Information</h2>
@@ -44,13 +44,13 @@ const createRestaurantDetailTemplate = (restaurant) => `
         <li>
           <h3>Foods Menu</h3>
           <span id="food">
-          <p>${restaurant.menus.foods.map((food) => food.name).join(", ")}</p>
+          <p>${restaurant.menus.foods.map((food) => food.name).join(', ')}</p>
           </span>
         </li>
         <li>
           <h3>Drinks Menu</h3>
           <span id="drink">
-            <p>${restaurant.menus.drinks.map((food) => food.name).join(", ")}</p>
+            <p>${restaurant.menus.drinks.map((food) => food.name).join(', ')}</p>
           </span>
         </li>
       </ul>
