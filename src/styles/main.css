@@ -17,7 +17,7 @@ body, html {
 
 body {
   font-family: "Raleway", sans-serif;
-  font-size: 14px;
+  font-size: 25px;
   color: #424242;
 }
 
@@ -264,7 +264,7 @@ main {
   max-height: 200px;
 }
 
-/* sing tak tambahi  */
+/* new added  */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -276,24 +276,31 @@ main {
 
 
 .post-item__rating {
-  font-size: 15px;
+  font-size: 30px;
   text-transform: uppercase;
   color: slategrey;
   font-weight: 600;
+  min-width: 70px;
+	min-height: 90px;
 }
 
 .post-item__rating__value {
   color: LightSalmon;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 50px;
+  font-weight: 600;
+  min-width: 120px;
+	height: 47px;
 }
 
 .post-item__title {
-  font-size: 35px;
+  font-size: 40px;
   font-weight: bold;
   color: slategrey;
   margin-top: 16px;
   transition: 0.3s opacity;
+  min-width: 45px;
+	min-height: 45px;
 }
 
 .post-item__title:hover {
@@ -304,13 +311,14 @@ main {
   text-decoration: none;
   color: inherit;
   box-sizing: border-box;
-  font-size: 25px;
+  font-size: 40px;
   min-height: 44px;
+  min-width: 45px;
 }
 
 .post-item__description {
   margin-top: 16px;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.5em;
   overflow: hidden;
   color: black;
