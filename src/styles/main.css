@@ -286,9 +286,10 @@ main {
 .post-item__rating__value {
   color: LightSalmon;
   text-decoration: none;
-  font-size: 40px;
+  font-size: 85px;
   font-weight: 600;
-  min-width: 20px;
+  max-width: 20;
+  max-height: 15px;
   font-family: 'none';
 }
 
@@ -504,6 +505,8 @@ h2{
 /* revisi  */
 p {
   font-size: large;
+  min-width: 50px;
+  min-height: 50px;
 }
 
 
