@@ -19,6 +19,10 @@ const appBar = new AppBar({
   content: document.querySelector('#content'),
 });
 
+document.querySelector('.icon__menu a').addEventListener('click', (e) => {
+  e.preventDefault();
+});
+
 window.addEventListener('load', () => {
   appBar.renderContent();
 });
