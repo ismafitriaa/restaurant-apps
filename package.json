@@ -7,10 +7,11 @@
     "start-dev": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "test": "karma start",
+    "e2e": "codeceptjs run --steps",
     "lint": "eslint ./src"
   },
   "keywords": [],
-  "author": "your_name <your.email@domain.com>",
+  "author": "Isma Fitria <your.email@domain.com>",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.18.5",
@@ -19,6 +20,7 @@
     "codeceptjs": "^3.4.1",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.1",
+    "cypress": "^12.14.0",
     "eslint": "^8.42.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.27.5",
