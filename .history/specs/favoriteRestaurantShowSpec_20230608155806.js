@@ -27,7 +27,7 @@ describe('Showing all favorite restaurants', () => {
     });
 
     it('should show the information that no restaurants have been favorited', (done) => {
-      document.getElementById('resto-list').addEventListener('resto-list:updated', () => {
+      document.getElementById('post-item').addEventListener('resto-list:updated', () => {
         expect(document.querySelectorAll('#resto-item__not__found').length)
           .toEqual(1);
 
@@ -46,8 +46,8 @@ describe('Showing all favorite restaurants', () => {
 
   describe('When favorite restaurants exist', () => {
     it('should show the restaurants', (done) => {
-      document.getElementById('resto-list').addEventListener('resto-list:updated', () => {
-        expect(document.querySelectorAll('#post-item').length).toEqual(2);
+      document.getElementById('post-item').addEventListener('post-item:updated', () => {
+        expect(document.querySelectorAll('#resto-item').length).toEqual(2);
         done();
       });
 

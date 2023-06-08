@@ -1,6 +1,6 @@
 import FavoriteRestaurantDB from '../src/scripts/data/favoriteresturant-db';
-import FavoriteRestaurantSearchView from '../src/scripts/view/pages/templateFavorite/favoritesearch';
-import FavoriteRestaurantShowPresenter from '../src/scripts/view/pages/templateFavorite/favoriteshow';
+import FavoriteRestaurantSearchView from '../src/scripts/view/pages/templateFavorite/favoriteSearch';
+import FavoriteRestaurantShowPresenter from '../src/scripts/view/pages/templateFavorite/favoriteShow';
 
 describe('Showing all favorite restaurants', () => {
   let view;
@@ -27,7 +27,8 @@ describe('Showing all favorite restaurants', () => {
     });
 
     it('should show the information that no restaurants have been favorited', (done) => {
-      document.getElementById('resto-list').addEventListener('resto-list:updated', () => {
+      const postItems = document.getElementsByClassName('post-item');
+      postItems[0].addEventListener('resto-list:updated', () => {
         expect(document.querySelectorAll('#resto-item__not__found').length)
           .toEqual(1);
 
@@ -46,18 +47,25 @@ describe('Showing all favorite restaurants', () => {
 
   describe('When favorite restaurants exist', () => {
     it('should show the restaurants', (done) => {
-      document.getElementById('resto-list').addEventListener('resto-list:updated', () => {
-        expect(document.querySelectorAll('#post-item').length).toEqual(2);
+      const restoList = document.getElementById('resto-list');
+      restoList.addEventListener('resto-list:updated', () => {
+        expect(document.querySelectorAll('#resto-item').length).toEqual(2);
         done();
       });
 
       const favoriteRestaurants = spyOnAllFunctions(FavoriteRestaurantDB);
       favoriteRestaurants.getAllRestaurants.and.returnValues([
         {
-          id: 11, name: 'A', vote_average: 3, overview: 'Sebuah resto A',
+          id: 11,
+          name: 'A',
+          vote_average: 3,
+          overview: 'Sebuah resto A',
         },
         {
-          id: 22, name: 'B', vote_average: 4, overview: 'Sebuah resto B',
+          id: 22,
+          name: 'B',
+          vote_average: 4,
+          overview: 'Sebuah resto B',
         },
       ]);
 

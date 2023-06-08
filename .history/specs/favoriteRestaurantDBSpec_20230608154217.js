@@ -3,10 +3,10 @@ import FavoriteRestaurantDB from '../src/scripts/data/favoriteresturant-db';
 
 describe('Favorite Restaurant Idb Contract Test Implementation', () => {
   afterEach(async () => {
-    (await FavoriteRestaurantDB.getAllRestaurants()).forEach(async (Restaurant) => {
-      await FavoriteRestaurantDB.deleteRestaurant(Restaurant.id);
+    (await FavoriteRestaurantIdb.getAllRestaurants()).forEach(async (restaurant) => {
+      await FavoriteRestaurantIdb.deleteRestaurant(restaurant.id);
     });
   });
 
-  itActsAsFavoriteRestaurantModel(FavoriteRestaurantDB);
+  itActsAsFavoriteRestaurantModel(FavoriteRestaurantIdb);
 });
