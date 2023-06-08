@@ -22,17 +22,6 @@
 		height: 60px;
 	}
 
-	.hero{
-		background-image:
-		-webkit-image-set(
-		  url("../../dist/images/heros/hero-image_4-small.jpg")
-		);
-	  background-image:
-		image-set(
-			url("../../dist/images/heros/hero-image_4-small.jpg") 
-		);
-	}
-
 }
 
 @media screen and (max-width: 840px) {
@@ -51,17 +40,6 @@
 
 	.nav { 
 		height: 60px;
-	}
-
-	.hero{
-		background-image:
-		-webkit-image-set(
-		  url("../../dist/images/heros/hero-image_4-small.jpg") 
-		);
-	  background-image:
-		image-set(
-			url("../../dist/images/heros/hero-image_4-small.jpg")
-		);
 	}
 
 
@@ -83,17 +61,6 @@
 
 	.nav { 
 		height: 60px;
-	}
-
-	.hero{
-		background-image:
-		-webkit-image-set(
-		  url("../../dist/images/heros/hero-image_4-large.jpg")
-		);
-	  background-image:
-		image-set(,
-			url("../../dist/images/heros/hero-image_4-large.jpg") 
-		);
 	}
 
 
