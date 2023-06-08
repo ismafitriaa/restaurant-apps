@@ -1,5 +1,5 @@
 Feature('step');
 
-Scenario('test something',  ({ I }) => {
+Scenario('test something', ({ I }) => {
 
 });

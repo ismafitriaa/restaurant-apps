@@ -1,23 +1,22 @@
 describe('positive case', () => {
-  
   it('User Klik Menyukai Restaurant', () => {
     cy.visit('http://localhost:9000/');
     cy.get(':nth-child(1) > .post-item__content > .post-item__title > a').click();
     cy.get('#favoriteButton').should('be.visible');
     cy.get('#favoriteButton').click();
-    cy.get('.nav__list > :nth-child(1) > a').click({force: true});
+    cy.get('.nav__list > :nth-child(1) > a').click({ force: true });
     cy.get(':nth-child(2) > .post-item__content > .post-item__title > a').click();
     cy.get('#favoriteButton').should('be.visible');
     cy.get('#favoriteButton').click();
-    cy.get('.nav__list > :nth-child(1) > a').click({force: true});
+    cy.get('.nav__list > :nth-child(1) > a').click({ force: true });
     cy.get(':nth-child(3) > .post-item__content > .post-item__title > a').click();
     cy.get('#favoriteButton').should('be.visible');
     cy.get('#favoriteButton').click();
-    cy.get('.nav__list > :nth-child(1) > a').click({force: true});
+    cy.get('.nav__list > :nth-child(1) > a').click({ force: true });
     cy.get(':nth-child(4) > .post-item__content > .post-item__title > a').click();
     cy.get('#favoriteButton').should('be.visible');
     cy.get('#favoriteButton').click();
-    cy.get('.nav__list > :nth-child(1) > a').click({force: true});
+    cy.get('.nav__list > :nth-child(1) > a').click({ force: true });
     cy.get(':nth-child(5) > .post-item__content > .post-item__title > a').click();
     cy.get('#favoriteButton').should('be.visible');
     cy.get('#favoriteButton').click();
@@ -32,10 +31,10 @@ describe('positive case', () => {
   it('User Klik Tidak menyukai Restaurant', () => {
     cy.visit('http://localhost:9000/#/favorite');
     cy.wait(300);
-    cy.get(':nth-child(1) > .post-item__content > .post-item__title > a').click({force: true});
+    cy.get(':nth-child(1) > .post-item__content > .post-item__title > a').click({ force: true });
     cy.get('#favoriteButton').should('exist');
     cy.get('#favoriteButton').should('be.visible');
     cy.get('#favoriteButton').click();
-    cy.visit('http://localhost:9000/#/favorite'); 
+    cy.visit('http://localhost:9000/#/favorite');
   });
-})
+});

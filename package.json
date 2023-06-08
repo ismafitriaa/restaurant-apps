@@ -9,7 +9,7 @@
     "test": "karma start",
     "e2e": "codeceptjs run --steps",
     "e2ecypress": "npx cypress open",
-    "lint": "eslint ./src",
+    "lint": "eslint . --fix",
     "build-image": "node sharp.js"
   },
   "keywords": [],
