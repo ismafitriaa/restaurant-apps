@@ -1,0 +1,34 @@
+const { Scenario } = require('codeceptjs');
+const assert = require('assert');
+
+Scenario('unfavoriting one restaurant', async ({ I }) => {
+  I.wait(5);
+  I.see('Tidak ada restaurant untuk ditampilkan', '#resto-item__not__found');
+  I.amOnPage('/');
+  I.wait(3);
+  I.waitForElement('.post-item');
+  I.seeElement('.post-item__title');
+  const firstResto = locate('.post-item__title').first();
+  const firstRestoTitle = await I.grabTextFrom(firstResto);
+  I.click(firstResto);
+  I.wait(10);
+  I.seeElement('.favorite');
+  I.click('.favorite');
+  I.wait(3);
+  I.amOnPage('/#/favorite');
+  I.wait(3);
+  I.seeElement('.post-item__title');
+  const firstRestolike = locate('.post-item__title').first();
+  const favoritedRestoTitle = await I.grabTextFrom(firstRestolike);
+  assert.strictEqual(firstRestoTitle, favoritedRestoTitle);
+  I.click(firstRestolike);
+  I.wait(10);
+  I.seeElement('.favorite');
+  I.click('.favorite');
+  I.wait(3);
+  I.amOnPage('/#/favorite');
+  I.wait(3);
+  I.seeElement('#resto-item__not__found');
+  const onFav = await I.grabTextFrom('#resto-item__not__found');
+  assert.strictEqual(onFav, 'Tidak ada restaurant untuk ditampilkan');
+});
